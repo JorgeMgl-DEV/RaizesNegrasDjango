@@ -1,0 +1,38 @@
+.project-section {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 800px;
+}
+
+.project-section__text {
+    max-width: 800px;
+    text-align: justify;
+    margin: 0;
+    margin-left: 165px;
+}
+
+.project-section__text .title {
+    color: var(--bg-cor-id-2);
+    font-weight: bolder;
+    font-size: 50px;
+    margin-left: 0;
+}
+
+.project-section__text .text {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.project-section__img {
+    max-width: 600px;
+    margin: 120px;
+    margin-bottom: 0;
+}
+
+.project-section__img .subtitle {
+    font-size: 15px;
+    padding: 10px;
+    align-items: center;
+}

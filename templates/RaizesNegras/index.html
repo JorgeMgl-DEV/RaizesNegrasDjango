@@ -1,0 +1,134 @@
+{% load static %}`
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raízes Negras</title>
+    <link rel="stylesheet" href="{% static 'styles/reset.css'%}">
+    <link rel="stylesheet" href="{% static 'styles/vars.css'%}">
+    <link rel="stylesheet" href="{% static 'styles/style.css'%}">
+    <link rel="stylesheet" href="{% static 'styles/navbar.css'%}">
+    <link rel="stylesheet" href="{% static 'styles/svg.css'%}">
+    <link rel="stylesheet" href="{% static 'styles/section-top.css'%}">
+    <link rel="stylesheet" href="{% static 'styles/project-section.css'%}">
+    <link rel="stylesheet" href="{% static 'styles/cultural-section.css'%}">
+    <link rel="stylesheet" href="{% static 'styles/footer.css'%}">
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css"/>
+
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="#"><img src="{% static 'assets/logo/raizes negras claro transparente p.png'%}" alt="Logo Raízes Negras"></a>
+        </div>
+        <div class="navbar__direita">
+            <div class="navbar__menu">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Conteúdo</a></li>
+                    <li><a href="#">FAQ & Contato</a></li>
+                </ul>
+            </div>
+            <div class="navbar__search">
+                <input type="text" placeholder="Buscar...">
+                <button class="fa fa-search" aria-label="Buscar"></button>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="section-top">
+    <div class="section-top__images">
+        <a href="#" class="section-top__logo">
+            <img src="{% static 'assets/logo/raizes negras escuro transparente p.png' %}" alt="Logo Raízes Negras">
+        </a>
+        <!--
+        <div class="section-top__map container">
+            <img src="{% static 'assets/logo/Mapa-MA.svg' %}" onload="fetchSvg(this)" alt="Mapa do Maranhão">
+            <div id="popup"></div>
+        </div>
+        -->
+        <a href="#" class="section-top__map">
+            <img src="{% static 'assets/logo/Mapa MA.png '%}" alt="Mapa do Maranhãos" />
+        </a>
+        
+    </div>
+    <div class="section-top__text">
+        <p>Um acervo cultural dedicado à preservação da herança <br> afrodescendente no Maranhão.</p>
+    </div>
+    <div class="arrow-down"></div>
+</section>
+
+<div class="bottom-section">
+    <section class="project-section">
+        <div class="project-section__text">
+            <h1 class="project-section__text title">
+                O Projeto
+            </h1>
+            <span class="project-section__text text">
+                O projeto Raízes Negras tem como objetivo valorizar e preservar a memória cultural afrodescendente no Maranhão. Apesar de sua relevância histórica, muitos aspectos dessa cultura permanecem não documentados, dificultando sua valorização. A criação de uma plataforma digital interativa reunirá entrevistas com líderes comunitários, documentos históricos e materiais audiovisuais, servindo como um recurso educacional para estudantes e pesquisadores e promovendo a educação.
+            </span>
+        </div>
+        <div class="project-section__img">
+            <img src="{% static 'assets/imagens/section project.png '%}" alt="Foto do projeto Raízes Negras" />
+            <span class="subtitle">Alcântara é o município brasileiro com maior número de comunidades quilombolas, segundo lideranças locais Foto: CONAQ </span>
+        </div>
+    </section>
+    
+    <section class="cultural-section">
+        <div class="cultural-section__text">
+            <h1 class="cultural-section__text title">
+                Teia Cultural
+            </h1>
+            <h1 class="cultural-section__text text">
+                Confira abaixo uma seleção de conteúdos sobre a cultura afro-maranhense.
+            </h1>
+            <h3 class="cultural-section__text subtitle">Últimos Artigos Adicionados</h3>
+        </div>
+        
+        <div class="cultural-section__carrossel">
+            <div class="cultural-section__carrossel__item">
+                <img src="{% static 'assets/imagens/tamborDeMina.png '%}" alt="Artigo 1">
+                <p>Reflexões sobre a ancestralidade africana do Tambor de Mina do Maranhão.</p>
+                <a href="#">Acesse o artigo aqui</a>
+            </div>
+            <div class="cultural-section__carrossel__item">
+                <img src="{% static 'assets/imagens/cadaDeMinas.png'%}" alt="Artigo 2">
+                <p>A CASA DAS MINAS DE SÃO LUÍS DO MARANHÃO e a saga de NA AGONTIMÉ...</p>
+                <a href="#">Acesse o artigo aqui</a>
+            </div>
+            <div class="cultural-section__carrossel__item">
+                <img src="{% static 'assets/imagens/maranhao.png'%}" alt="Artigo 3">
+                <p>Economia e demografia da escravidão no Maranhão...</p>
+                <a href="#">Acesse o artigo aqui</a>
+            </div>
+            <div class="cultural-section__carrossel__item">
+                <img src="{% static 'assets/imagens/crianças.png '%}" alt="Artigo 4">
+                <p>Famílias e alunos de origem africana no Maranhão do século XIX...</p>
+                <a href="#">Acesse o artigo aqui</a>
+            </div>
+        </div>
+    </section>
+</div>
+<hr class="linha">
+
+<footer class="footer">
+    <span class="footer">&copy; 2025 Raízes Negras. Todos os direitos reservados.</span>
+    <div class="institutional">
+        <span>Realização: Jorge Miguel Viana Torres | Murilo Gabriel Mourão<br>
+        Orientação: Erick MacGregor
+        </span>
+    </div>
+    <div class="footer__logos">
+        <img src="{% static 'assets/logo/logo_iema.png'%}" alt="IEMA">
+        <img src="{% static 'assets/logo/LOGO_GOV_MA_2023_MAIOR.png'%}" alt="Governo do Maranhão">
+    </div>
+</footer>
+<script src="{% static 'svg.js'%}"></script>
+</body>
+</html>

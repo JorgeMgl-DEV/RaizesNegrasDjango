@@ -1,0 +1,40 @@
+.linha {
+    margin: 60px 0 0 0;
+    border: none;
+    height: 2px;
+    background-color: #606367;
+}
+
+.footer {
+    background-color: var(--bg-background-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer span {
+    font-size: 12px;
+    color: #606367;
+}
+
+.institucional span {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    color: #606367;
+}
+
+.footer__logos {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logos img {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+}

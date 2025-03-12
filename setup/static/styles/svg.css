@@ -1,0 +1,71 @@
+.container__map {
+    font-family: "Instrument Sans", serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#svg-map {
+    cursor: pointer;
+    max-width: 550px;
+    max-height: 850px;
+    margin-right: 15vw;
+}
+
+.regiao:hover {
+    fill: #F8BB5C !important;
+    stroke: #460E06 !important;
+}
+
+#popup {
+    display: none;
+    position: absolute;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+    background: #F8BB5C;
+    padding: 10px;
+    border-radius: 15px;
+    border: 4px solid #460E06;
+    color: #460E06;
+    margin: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#popup h2 {
+    margin: 5px 0 10px 0;
+    font-weight: bolder;
+    font-size: 21px;
+}
+
+#popup p {
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#popup a {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    border-radius: 16px;
+    width: 270px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #460E06;
+    color: #fff;
+    padding: 5px;
+}
+
+#popup a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
